@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.*.json
+
+# Credentials
+*-credentials*.json
+**/credentials*.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+*.log

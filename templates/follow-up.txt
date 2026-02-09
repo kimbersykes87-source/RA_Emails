@@ -1,0 +1,29 @@
+Hey {{FirstName}},
+
+Just following up on the Rubber Armstrong 2026 invitation we sent last week.
+
+We're finalizing our camp roster and would love to know if you're planning to join us on the playa this year.
+
+STEWARD TICKETS ARE COMING UP SOON, and we need to know who's interested in joining so we can allocate tickets accordingly.
+
+---
+
+IF YOU HAVEN'T ALREADY, PLEASE COMPLETE THE STATEMENT OF INTENT:
+
+https://track.rubberarmstrong.com/c/{{EmailHash}}/soi_form
+
+---
+
+Even if you're unsure or can only join for part of the week, we'd love to hear from you. The form helps us plan for infrastructure, tents, and steward ticket allocation.
+
+Questions about camp life, logistics, or what to expect? Hit reply and let's chat.
+
+Looking forward to hearing from you,
+Rubber Armstrong
+
+---
+
+Sent by Rubber Armstrong Camp for Burning Man 2026
+Questions? Reply to this email or contact rubberarmstrongcamp@gmail.com
+Don't want future updates? Visit: https://track.rubberarmstrong.com/c/{{EmailHash}}/unsubscribe
+

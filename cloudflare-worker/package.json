@@ -1,0 +1,24 @@
+{
+  "name": "rubber-armstrong-email-tracking",
+  "version": "1.0.0",
+  "description": "Email tracking worker for Rubber Armstrong Burning Man invitations",
+  "main": "worker.js",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "tail": "wrangler tail",
+    "test": "echo 'No tests yet'"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "email-tracking",
+    "google-sheets"
+  ],
+  "author": "Rubber Armstrong Camp",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
+
