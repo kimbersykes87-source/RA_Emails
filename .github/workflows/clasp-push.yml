@@ -21,8 +21,10 @@ jobs:
         run: npm i -g @google/clasp
 
       - name: Write clasp token
+        env:
+          CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
         run: |
-          echo '${{ secrets.CLASPRC_JSON }}' > ~/.clasprc.json
+          printf '%s' "$CLASPRC_JSON" > ~/.clasprc.json
 
       - name: Push Apps Script
         working-directory: apps-script-consolidated
