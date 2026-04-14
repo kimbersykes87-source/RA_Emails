@@ -1,0 +1,31 @@
+name: clasp push (RA_Emails)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps-script-consolidated/**"
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install clasp
+        run: npm i -g @google/clasp
+
+      - name: Write clasp token
+        run: |
+          echo '${{ secrets.CLASPRC_JSON }}' > ~/.clasprc.json
+
+      - name: Push Apps Script
+        working-directory: apps-script-consolidated
+        run: |
+          clasp status
+          clasp push
+
