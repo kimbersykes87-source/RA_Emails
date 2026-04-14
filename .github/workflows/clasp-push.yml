@@ -22,9 +22,9 @@ jobs:
 
       - name: Write clasp token
         env:
-          CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
+          CLASPRC_JSON_B64: ${{ secrets.CLASPRC_JSON_B64 }}
         run: |
-          printf '%s' "$CLASPRC_JSON" > ~/.clasprc.json
+          printf '%s' "$CLASPRC_JSON_B64" | base64 -d > ~/.clasprc.json
 
       - name: Push Apps Script
         working-directory: apps-script-consolidated
